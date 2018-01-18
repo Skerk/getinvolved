@@ -57,7 +57,31 @@
                             <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
 
                             <div class="col-md-6">
+                                
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                        <p class='text-center'><strong><em>A SURVEY TO MEET THE VOLUNTEERS EXPECTATIONS</em></strong></p>
+                            <label class="col-md-4 control-label">Where would you like to get involved?</label>
+
+                            <div class="col-md-6">
+                                <input id="survey" type="text" class="form-control" name="survey" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">What are your qualities?</label>
+
+                            <div class="col-md-6">
+                                <input id="survey2" type="text" class="form-control" name="survey_two" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Where are you from?</label>
+
+                            <div class="col-md-6">
+                                <input id="survey3" type="text" class="form-control" name="survey_three" required>
                             </div>
                         </div>
 
