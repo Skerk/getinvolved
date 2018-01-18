@@ -177,34 +177,9 @@
 							<h2>Hello.<br/>We are <br/>Get Involved.</h2>
 							<h3>We want to give new opportunities to young folks, to take part of the changemakers movement, to change those broken
 								relationships between our nations and to inspire new initiatives solving social, environmental and economic issues.</h3>
-							<a class="css3Animate" href="#" title="Download resume">Explore</a>
+							<a class="css3Animate" href="#" title="Get Involved">Explore</a>
 							<hr>
-							<ul>
-								<!--<li>
-								<label>Name</label> 
-								<span>Walter White</span>
-							</li>
-							<li>
-								<label>Birthday</label>
-								<span>August 18, 1987</span>
-							</li>
-							<li>
-								<label>Address</label>
-								<span>Calle Sandoval 31001 Pamplona (Spain)</span>
-							</li>
-							<li>
-								<label>Email</label>
-								<span>email@domain.com</span>
-							</li>
-							<li>
-								<label>Phone</label> 
-								<span>(123) - 456-7890</span>
-							</li>
-							<li>
-								<label>Website</label>
-								<span>www.domain.com</span>
-							</li>-->
-							</ul>
+							
 						</div>
 					</div>
 				</div>
@@ -229,16 +204,18 @@
 									<p><strong>EVERYBODY IS A CHANGEMAKER!</strong></p>
 <p>What is the point to do something if it is not to make a change?</p>
 							</div>
+							<h1 id="movement" class="text-center"><span aria-hidden="true" data-icon="&#xe00e;"></span>MOVEMENT IS TAKING PLACE</h1>
 						</div>
 						<div class="col-md-6 skill">
-							<h1 id="movement"><span aria-hidden="true" data-icon="&#xe00e;"></span>MOVEMENT IS TAKING PLACE</h1>
-							<div class="skill-content">
-								<!--<img src="img\get_involved_stat.png" alt="statistique get_involved">-->
+							
+							
 
 
 								<div class="bar">
-									
+								<div class="skill-content">
+							
 									<div class="col-md-12">
+									<a class="img-problem" target="_blank" href="http://www.bridgeinternationalacademies.com"><img class="img-problem" src="{{ url('img/bridge.jpg') }}" alt="statistique getinvolved"></a>
 										<p><strong>Problematic : Affordable education</strong>
 </p>
 <p><strong>Salvation : Bridge International Academies</strong></p>
@@ -251,6 +228,7 @@
 							<div class="bar">
 									
 									<div class="col-md-12">
+									<a class="img-problem" target="_blank" href="http://www.flyzipline.com/"><img class="img-problem" src="{{ url('img/zip.jpg') }}" alt="statistique getinvolved"></a>
 										<p><strong>Problematic :  Adequate access to essential medical products</strong></p>
 
 <p><strong>Salvation : FlyZipLine</strong></p>
@@ -651,13 +629,30 @@ sont en train de changer !
 							<br/>
 							<br/>
 							<div class="clearfix"></div>
-							<form action="#" id="contactform">
-								<div class="col-md-6">
-									<input type="text" name="name" class="form-control" placeholder="EMAIL">
+							<form method="POST" action="{{ route('login') }}" id="contactform">
+							{{ csrf_field() }}
+								<div class="col-md-6 form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+									<input type="email" name="email" class="form-control" value="{{ old('email') }}" required autofocus placeholder="EMAIL">
+									@if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
 								</div>
-								<div class="col-md-6">
-									<input type="password" name="email" class="form-control" placeholder="PASSWORD">
+								<div class="col-md-6 form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+									<input type="password" name="password" class="form-control" placeholder="PASSWORD" required>
+									@if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
 								</div>
+								<div class="checkbox col-md-12">
+                                    <label>
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                    </label>
+                                </div>
+
 								<!--<div class="col-md-12">
 								<textarea name="message" rows="5" class="form-control" placeholder="MESSAGE"></textarea>
 							</div>-->

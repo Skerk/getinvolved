@@ -229,9 +229,10 @@
 									<p><strong>EVERYBODY IS A CHANGEMAKER!</strong></p>
 <p>What is the point to do something if it is not to make a change?</p>
 							</div>
+							<h1 id="movement" class="text-center"><span aria-hidden="true" data-icon="&#xe00e;"></span>MOVEMENT IS TAKING PLACE</h1>
 						</div>
 						<div class="col-md-6 skill">
-							<h1 id="movement"><span aria-hidden="true" data-icon="&#xe00e;"></span>MOVEMENT IS TAKING PLACE</h1>
+							
 							<div class="skill-content">
 								<!--<img src="img\get_involved_stat.png" alt="statistique get_involved">-->
 
@@ -649,6 +650,15 @@ sont en train de changer !
 							<h4>change the world</h4>
 							<br/>
 							<br/>
+							<a class="text-white" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Se déconnecter
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
 							<br/>
 							<div class="clearfix"></div>
 							

@@ -17,9 +17,32 @@
 /*------------------------------------------------------------------
 
 /*------------------------------------------------------------------
-1. GLOBAL STYLES
+1. MON STYLE CSS
 -------------------------------------------------------------------*/
+.text-white{
+	color: white;
+}
+.text-white:hover{
+	border-color: white!important;
+	background-color: white!important;
+	color: black!important;
+}
+.img-problem{
+	position: static;
+	padding-right: 20px;
+	border: none!important;
+	width: 80px!important;
+	float: left!important;
+	border-radius: 50%!important;
+}
+.img-problem:hover{
+	background-color: transparent!important;
+}
 
+p.textstat{
+	display: inline-block;
+}
+/* ------------------------------------------------------------- */
 html,
 body { 
 	height:100%;
@@ -1282,6 +1305,7 @@ margin-top: 20px;
 	color: #e7314f;
 }
 #movement{
+	margin-top: 40px;
 	font-size: 26px;
 }
 .redspan{
