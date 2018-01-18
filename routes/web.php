@@ -15,20 +15,8 @@ Route::get('/', function () {
 return view('layouts/master');
 
 });
-// // Pour créer les données directement que je prendrai dans mon html avec $data
-//     // $data = [
-//     //     $first_name = 'Towfiq',
-//     //     $last_name = 'MolenGeekois'
-//     // ];
 
 
-// // Meme commande écrite differement
-//        // $name = 'Towfiq MolenGeek';
-//  // week end = date (n) <- Lundi =1, mardi = 2, etc. donc samedi=6 et dimanche 7
-//  // True ou false si c le week end ou pas
-//   //  $isWeekend = date ('N') >=6;
-    
-//     return view('welcome', compact('name', 'isWeekend'));
 
 // Appel la page /about
 
@@ -58,3 +46,8 @@ Route::get('/help', function(){
 // ];
 //     return view('events/index', compact('events'));
 // });
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/home', 'HomeController@index');

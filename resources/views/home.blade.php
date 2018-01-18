@@ -113,7 +113,7 @@
 					<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="2" data-style="darkNav" data-style2="aboutmeNav">Who we are<span class="line css3Animate"></span></button></li>
 					<li><button class="pt-trigger right-margin css3Animate" data-animation="22" data-goto="3" data-style="darkNav" data-style2="workNav">Problem<span class="line css3Animate"></span></button></li>
 					<li><button class="pt-trigger left-margin css3Animate" data-animation="22" data-goto="5" data-style="darkNav" data-style2="blogNav">Missions<span class="line css3Animate"></span></button></li>
-					<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="6" data-style="lightNav" data-style2="contactNav">Sign In<span class="line css3Animate"></span></button></li>
+					<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="6" data-style="lightNav" data-style2="contactNav">{{ Auth::user()->name }}<span class="line css3Animate"></span></button></li>
 				</ul>
 				<a href="#" id="menuMobileOpen" class="css3Animate hidden-sm hidden-md hidden-lg" aria-hidden="true" data-icon="&#x61;" title=""></a>
 			</div>
@@ -645,33 +645,13 @@ sont en train de changer !
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h3>Connect</h3>
-							<h4>and change the world</h4>
+							<h3>{{ Auth::user()->name }}</h3>
+							<h4>change the world</h4>
 							<br/>
 							<br/>
 							<br/>
 							<div class="clearfix"></div>
-							<form action="#" id="contactform">
-								<div class="col-md-6">
-									<input type="text" name="name" class="form-control" placeholder="EMAIL">
-								</div>
-								<div class="col-md-6">
-									<input type="password" name="email" class="form-control" placeholder="PASSWORD">
-								</div>
-								<!--<div class="col-md-12">
-								<textarea name="message" rows="5" class="form-control" placeholder="MESSAGE"></textarea>
-							</div>-->
-								<div class="col-md-12 send-div">
-									<button class="btn btn-default css3Animate" type="submit" value="Send">CONNECT</button></br>
-									</br>
-									<button class="btn btn-default css3Animate" style="background:#3b5998" type="submit" value="Send">Connect with Facebook account</button></br>
-									</br>
-									<button class="btn btn-default css3Animate" style="background:#DD4B39" type="submit" value="Send">Connect with Google account</button></br>
-									</br>
-									<!-- <button class="btn btn-default css3Animate" type="submit" value="Send">Register</button> -->
-									<a class="btn btn-default css3Animate" href="{{ url('/register')}}" title="Register here">Register</a>
-								</div>
-							</form>
+							
 							<div class="clearfix"></div>
 							<div class="success-message"></div>
 							<div class="error-message"></div>
@@ -733,7 +713,7 @@ sont en train de changer !
 								    title="Google Plus" title=""></a>
 							</li>
 						</ul>
-						<p class="copyright">Copyright &#169; 2017 <a href="#">TF YounGeek's</a> - All rights reserved.</p>
+						<p class="copyright">Copyright &#169; 2017 <a href="#">Molen IT</a> - All rights reserved.</p>
 					</div>
 				</div>
 			</div>
