@@ -12,7 +12,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
+                            <label for="name" class="col-md-4 control-label">Last Name</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
@@ -22,6 +22,61 @@
                                         <strong>{{ $errors->first('name') }}</strong>
                                     </span>
                                 @endif
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">First Name</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="firstname" required autofocus>
+
+                                @if ($errors->has('firstname'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('firstname') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Gender</label>
+
+                            <div class="col-md-6">
+                            <input type="radio" name="gender" value="female">Female
+                            <input type="radio" name="gender" value="male">Male
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Year</label>
+
+                            <div class="col-md-6">
+                            <input id="year" type="text" class="form-control" name="year" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">I'm graduated</label>
+
+                            <div class="col-md-6">
+                            <input id="survey" type="text" class="form-control" name="graduated" required>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">I live</label>
+
+                            <div class="col-md-6">
+                            <input id="live" type="text" class="form-control" name="live" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">I from</label>
+
+                            <div class="col-md-6">
+                            <input id="from" type="text" class="form-control" name="from" required>
                             </div>
                         </div>
 
@@ -64,21 +119,27 @@
 
                         <div class="form-group">
                         <p class='text-center'><strong><em>A SURVEY TO MEET THE VOLUNTEERS EXPECTATIONS</em></strong></p>
-                            <label class="col-md-4 control-label">Where would you like to get involved?</label>
+                            
+
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">I'm available from</label>
 
                             <div class="col-md-6">
-                                <input id="survey" type="text" class="form-control" name="survey" required>
+                            <input id="survey" type="text" class="form-control" name="survey" required>
                             </div>
                         </div>
+
+
                         <div class="form-group">
-                            <label class="col-md-4 control-label">What are your qualities?</label>
+                            <label class="col-md-4 control-label">I speak fluently</label>
 
                             <div class="col-md-6">
                                 <input id="survey2" type="text" class="form-control" name="survey_two" required>
                             </div>
                         </div>
+                        
                         <div class="form-group">
-                            <label class="col-md-4 control-label">Where are you from?</label>
+                            <label class="col-md-4 control-label">I'm looking for an internship/volunteering</label>
 
                             <div class="col-md-6">
                                 <input id="survey3" type="text" class="form-control" name="survey_three" required>

@@ -230,15 +230,19 @@
 <p>What is the point to do something if it is not to make a change?</p>
 							</div>
 						</div>
+					
+						<h1 id="movement" class="text-center"><span aria-hidden="true" data-icon="&#xe00e;"></span>MOVEMENT IS TAKING PLACE</h1>
+						</div>
 						<div class="col-md-6 skill">
-							<h1 id="movement"><span aria-hidden="true" data-icon="&#xe00e;"></span>MOVEMENT IS TAKING PLACE</h1>
-							<div class="skill-content">
-								<!--<img src="img\get_involved_stat.png" alt="statistique get_involved">-->
+							
+							
 
 
 								<div class="bar">
-									
+								<div class="skill-content">
+							
 									<div class="col-md-12">
+									<a class="img-problem" target="_blank" href="http://www.bridgeinternationalacademies.com"><img class="img-problem" src="{{ url('img/bridge.jpg') }}" alt="statistique getinvolved"></a>
 										<p><strong>Problematic : Affordable education</strong>
 </p>
 <p><strong>Salvation : Bridge International Academies</strong></p>
@@ -251,6 +255,7 @@
 							<div class="bar">
 									
 									<div class="col-md-12">
+									<a class="img-problem" target="_blank" href="http://www.flyzipline.com/"><img class="img-problem" src="{{ url('img/zip.jpg') }}" alt="statistique getinvolved"></a>
 										<p><strong>Problematic :  Adequate access to essential medical products</strong></p>
 
 <p><strong>Salvation : FlyZipLine</strong></p>

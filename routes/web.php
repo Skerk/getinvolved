@@ -18,20 +18,7 @@ return view('layouts/master');
 
 
 
-// Appel la page /about
 
-Route::get('/about', function () {
-
-    // Retourne la vue du about qui se trouve dans le dossier "page"
-    return view('page/about');
-
-    // autre manière d'écrire la view sous dossier du ressource
-    // return View::make('page.about');
-});
-
-Route::get('/help', function(){
-    return view('page/help');
-});
 
 
 
@@ -46,8 +33,18 @@ Route::get('/help', function(){
 // ];
 //     return view('events/index', compact('events'));
 // });
+
+
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/home', 'HomeController@index');
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/home', 'HomeController@index', function(){
+        Route::get('/', 'HomeController@index'); 
+
+    }); 
+   
+});

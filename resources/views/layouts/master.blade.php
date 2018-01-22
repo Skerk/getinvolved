@@ -63,23 +63,7 @@
 
 <body>
 
-	<!--<div id="ut_styleswitcher">
-		<div style="position: relative;">
-            <a href="#" class="toggle"></a>
-            <h1>Homepage style</h1>
-	            <p>
-		     		<a class="button-switcher" href="index.html">Image Slider</a>
-		     		<a class="button-switcher" href="single_image.html">Single Image</a>
-		     		<a class="button-switcher" href="single_image_gradient.html">Single Image<br/><span>(gradient background)</span></a>
-		     		<a class="button-switcher" href="video.html">Video version</a>
-		     		<a class="button-switcher" target="_blank" href="video_youtube.html">Youtube version</a>
-		     		<a class="button-switcher" target="_blank" href="video_youtube_list.html">Youtube version<br/><span>(video list)</span></a>
-		     		<a class="button-switcher" href="video_vimeo.html">Vimeo version</a>
-		     		<a class="button-switcher" href="gradient.html">Gradient background</a>
-	     		</p>	
-            <p class="info">This Panel is only for demo purposes! </p>
-        </div>
-    </div>-->
+	
 
 	<div id="pattern"></div>
 	<div id="backSlider" class="css3AnimateSlow"></div>
@@ -462,20 +446,70 @@
 									<div class="post-image">
 										<img id="monImage" src="{{url('img/blog/1.jpg') }}" class="img-responsive" alt="Get involved" />
 									</div>
-									<h5>Danané, Côte d'Ivoire</h5>
-									<p class="info-post">Mission 2017 | Get Involved</p>
+									<h5>Abidjan – Grand Bassam, Côte d'Ivoire</h5>
+									<p class="info-post">Mission 2018 | Get Involved</p>
 										
-									<div class="row text-center" id="texteUn">
-	<h3><strong>Ce qu’on dit de la Côte d’Ivoire:</strong></h3><br><br>
-<em>« 48.9% de Taux de pauvreté - 2.9% Taux annuel de croissance démographique- 9.8% Taux de
+									<div class="row" id="texteUn">
+									
+									<div class="col-md-6 text-left"><br>
+									<p><em>Les missions que nous proposons gravitent toujours autours de trois piliers:</em></p>
+
+<p><strong>La qualification:</strong> Si tu pars avec Get Involved c'est que tu as des compétences à faire valoir. La bonne volonté est une incroyable qualité, mais celle-ci ne peut avoir un impact durable qu’à partir du moment où il y a une véritable plus-value à apporter.</p>
+
+<p><strong>L'échanges de pratiques:</strong> En effet, lorsque tu pars avec Get Involved tu vas te retrouver avec un binôme. Un autre jeune, dans ce cas-ci ivoirien, qui aura une formation assez similaire à la tienne, ou complémentaire.</p>
+
+<p><strong>Un win-win décomplexé:</strong> Si tu pars avec Get Involved, tu es conscient que l'idée n'est pas d'aller sauver des petits africains qui meurent de faim. Il s'agit de s'engager dans un mouvement, dans lequel tu peux choisir d'apporter ta pierre. Dans le même temps cela te rapportera une expérience humaine et professionnelle non négligeable, puisque tu pars travailler dans ton domaine.
+Chez nous il n'y a pas "celui qui aide" et "celui qui est aidé", il n'y a que des partenaires égaux, avec des parcours différents.</p>
+
+
+
+</div>
+									<div class="col-md-6 text-right">
+									
+									<h3 style="text-align: right;"><strong>Ce qu’on dit de la Côte d’Ivoire</strong></h3>
+									<em>« 48.9% de Taux de pauvreté - 2.9% Taux annuel de croissance démographique- 9.8% Taux de
 croissance du PIB (en 2012) - 0.43 Indicateur de développement humain - 61% Taux d’accès à l’eau
 potable - 56.1% Taux net de scolarisation (primaire) » <strong>Source : PNUD</strong></em>
 <br>
-<br>Cependant, en Côte d’Ivoire un mouvement est en marche. Les projets de développement durable
+<br>
+Cependant, en Côte d’Ivoire un mouvement est en marche. Les projets de développement durable
 visant à renforcer la population s’implémentent dans divers endroits du pays. Bien que les ivoiriens
 doivent encore faire face à de nombreux défis tels que: la sécurité, la réintégration des ex-
 combattants, la cohésion sociale, l’emploi des jeunes, la dynamisation du secteur privé… Les choses
 sont en train de changer !
+<div class="row text-center">
+
+	<button class="btn btn-danger" type="submit">Je veux m'engager</button>
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Plus d'informations</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4>Côte d'Ivoire</h4>
+        </div>
+        <div class="modal-body">
+		<ul class="ulmission">
+	<li><strong>OBJECTIF:</strong> <p>Proposer une alternative à la dépendance au plastique en Côte d'Ivoire</p></li>
+	<li><strong>MISSION:</strong> <p>Créer une entreprise à finalité sociale qui va fabriquer des sacs en matériaux biodégradables</p></li>
+	<li><strong>GI NÉCESSAIRES:</strong> <p>6 jeunes diplômés/stagiaires (21 à 35 ans)</p></li>
+	<li><strong>LIEU:</strong> <p>Abidjan – Grand Bassam, Côte D'Ivoire</p></li>
+	<li><strong>DURÉE:</strong> <p>3 mois (Février - Avril)</p></li>
+</ul>
+        </div>
+        <div class="modal-footer">
+		<button class="btn btn-danger" type="submit">Je veux m'engager</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+	
+
+
 
 								
 										</div>
@@ -484,8 +518,8 @@ sont en train de changer !
 							</div>
 							
 
-
-							<!--<div class="col-md-4 post">
+<!-- 
+							<div class="col-md-4 post">
 								<div class="post-left">
 									<div class="post-date">
 										<span>FR</span>
@@ -527,11 +561,11 @@ sont en train de changer !
 									</p>
 									
 								</div>
-							</div>-->
+							</div> -->
 
 
 
-						<!--<div class="row">
+						<!-- <div class="row">
 							
 
 
@@ -602,7 +636,7 @@ sont en train de changer !
 									
 								</div>
 							</div>
-						</div>-->
+						</div> -->
 					</div>
 				</div>
 			</section>
@@ -712,23 +746,23 @@ sont en train de changer !
 						<ul class="footer-social">
 							<li>
 								<a class="facebook css3Animate" href="#" aria-hidden="true" data-icon="&#xe093;" data-toggle="tooltip" data-placement="top"
-								    title="Facebook" title=""></a>
+								    title="Facebook"></a>
 							</li>
 							<li>
 								<a class="twitter css3Animate" href="https://twitter.com/GetInvolvedEuro" target="_blank" aria-hidden="true" data-icon="&#xe094;"
-								    data-toggle="tooltip" data-placement="top" title="Twitter" title=""></a>
+								    data-toggle="tooltip" data-placement="top" title="Twitter"></a>
 							</li>
 							<li>
 								<a class="instagram css3Animate" href="https://www.instagram.com/getinvolved.europe/" target="_blank" aria-hidden="true"
-								    data-icon="&#xe09a;" data-toggle="tooltip" data-placement="top" title="Instagram" title=""></a>
+								    data-icon="&#xe09a;" data-toggle="tooltip" data-placement="top" title="Instagram" ></a>
 							</li>
-							<!--<li><a class="pinterest css3Animate" href="#" target="_blank" aria-hidden="true" data-icon="&#xe095;" data-toggle="tooltip" data-placement="top" title="Pinterest" title=""></a></li>-->
+							
 							<li>
 								<a class="googleplus css3Animate" href="#" aria-hidden="true" data-icon="&#xe096;" data-toggle="tooltip" data-placement="top"
 								    title="Google Plus" title=""></a>
 							</li>
 						</ul>
-						<p class="copyright">Copyright &#169; 2017 <a href="#">TF YounGeek's</a> - All rights reserved.</p>
+						<p class="copyright">Copyright &#169; 2017 <a target="_blank" href="https://www.facebook.com/towfiq.badi">Molen IT</a> - All rights reserved.</p>
 					</div>
 				</div>
 			</div>
@@ -760,7 +794,7 @@ sont en train de changer !
 		<script type="text/javascript" src="{{ url('js/jquery.mb.YTPlayer.js') }}"></script>
 		<script type="text/javascript" src="{{ url('js/video_youtube.js') }}"></script>
 		<script type="text/javascript" src="{{ url('js/custom_2.js') }}"></script>
-        <script src='{{ ('../assets/js/bootstrap.js') }}'></script>
+        <!-- <script src='{{ url('/resources/assets/js/bootstrap.js') }}'></script> -->
 
 		<!-- DEMO Switcher
   	================================================== -->
@@ -768,7 +802,6 @@ sont en train de changer !
 
 
 </body>
-<!--Le reste est à finir dans la fin du mois de juillet (surtout la catégorie Problem, y a le footer qui veut pas se déplacer et quand tu réussis à le déplacer, le mode mobile ne suit pas)
-<!-- Mirrored from www.creabox.es/themes/white/theme/video_youtube.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Jun 2017 10:09:04 GMT -->
+
 
 </html>

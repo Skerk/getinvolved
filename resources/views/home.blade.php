@@ -233,13 +233,14 @@
 						</div>
 						<div class="col-md-6 skill">
 							
-							<div class="skill-content">
-								<!--<img src="img\get_involved_stat.png" alt="statistique get_involved">-->
+							
 
 
 								<div class="bar">
-									
+								<div class="skill-content">
+							
 									<div class="col-md-12">
+									<a class="img-problem" target="_blank" href="http://www.bridgeinternationalacademies.com"><img class="img-problem" src="{{ url('img/bridge.jpg') }}" alt="statistique getinvolved"></a>
 										<p><strong>Problematic : Affordable education</strong>
 </p>
 <p><strong>Salvation : Bridge International Academies</strong></p>
@@ -252,6 +253,7 @@
 							<div class="bar">
 									
 									<div class="col-md-12">
+									<a class="img-problem" target="_blank" href="http://www.flyzipline.com/"><img class="img-problem" src="{{ url('img/zip.jpg') }}" alt="statistique getinvolved"></a>
 										<p><strong>Problematic :  Adequate access to essential medical products</strong></p>
 
 <p><strong>Salvation : FlyZipLine</strong></p>
@@ -485,26 +487,67 @@
 									<div class="post-image">
 										<img id="monImage" src="{{url('img/blog/1.jpg') }}" class="img-responsive" alt="Get involved" />
 									</div>
-									<h5>Danané, Côte d'Ivoire</h5>
-									<p class="info-post">Mission 2017 | Get Involved</p>
+									<h5>Abidjan – Grand Bassam, Côte d'Ivoire</h5>
+									<p class="info-post">Mission 2018 | Get Involved</p>
 										
-									<div class="row text-center" id="texteUn">
-	<h3><strong>Ce qu’on dit de la Côte d’Ivoire:</strong></h3><br><br>
-<em>« 48.9% de Taux de pauvreté - 2.9% Taux annuel de croissance démographique- 9.8% Taux de
+									<div class="row" id="texteUn">
+									
+									<div class="col-md-6 text-left"><br>
+									<p><em>Les missions que nous proposons gravitent toujours autours de trois piliers:</em></p>
+
+<p><strong>La qualification:</strong> Si tu pars avec Get Involved c'est que tu as des compétences à faire valoir. La bonne volonté est une incroyable qualité, mais celle-ci ne peut avoir un impact durable qu’à partir du moment où il y a une véritable plus-value à apporter.</p>
+
+<p><strong>L'échanges de pratiques:</strong> En effet, lorsque tu pars avec Get Involved tu vas te retrouver avec un binôme. Un autre jeune, dans ce cas-ci ivoirien, qui aura une formation assez similaire à la tienne, ou complémentaire.</p>
+
+<p><strong>Un win-win décomplexé:</strong> Si tu pars avec Get Involved, tu es conscient que l'idée n'est pas d'aller sauver des petits africains qui meurent de faim. Il s'agit de s'engager dans un mouvement, dans lequel tu peux choisir d'apporter ta pierre. Dans le même temps cela te rapportera une expérience humaine et professionnelle non négligeable, puisque tu pars travailler dans ton domaine.
+Chez nous il n'y a pas "celui qui aide" et "celui qui est aidé", il n'y a que des partenaires égaux, avec des parcours différents.</p>
+
+
+
+</div>
+									<div class="col-md-6 text-right">
+									
+									<h3 style="text-align: right;"><strong>Ce qu’on dit de la Côte d’Ivoire</strong></h3>
+									<em>« 48.9% de Taux de pauvreté - 2.9% Taux annuel de croissance démographique- 9.8% Taux de
 croissance du PIB (en 2012) - 0.43 Indicateur de développement humain - 61% Taux d’accès à l’eau
 potable - 56.1% Taux net de scolarisation (primaire) » <strong>Source : PNUD</strong></em>
 <br>
-<br>Cependant, en Côte d’Ivoire un mouvement est en marche. Les projets de développement durable
+<br>
+Cependant, en Côte d’Ivoire un mouvement est en marche. Les projets de développement durable
 visant à renforcer la population s’implémentent dans divers endroits du pays. Bien que les ivoiriens
 doivent encore faire face à de nombreux défis tels que: la sécurité, la réintégration des ex-
 combattants, la cohésion sociale, l’emploi des jeunes, la dynamisation du secteur privé… Les choses
 sont en train de changer !
+<div class="row text-center">
 
-								
-										</div>
-									
-								</div>
-							</div>
+	<button class="btn btn-danger" type="submit">Je veux m'engager</button>
+	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Plus d'informations</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4>Côte d'Ivoire</h4>
+        </div>
+        <div class="modal-body">
+		<ul class="ulmission">
+	<li><strong>OBJECTIF:</strong> <p>Proposer une alternative à la dépendance au plastique en Côte d'Ivoire</p></li>
+	<li><strong>MISSION:</strong> <p>Créer une entreprise à finalité sociale qui va fabriquer des sacs en matériaux biodégradables</p></li>
+	<li><strong>GI NÉCESSAIRES:</strong> <p>6 jeunes diplômés/stagiaires (21 à 35 ans)</p></li>
+	<li><strong>LIEU:</strong> <p>Abidjan – Grand Bassam, Côte D'Ivoire</p></li>
+	<li><strong>DURÉE:</strong> <p>3 mois (Février - Avril)</p></li>
+</ul>
+        </div>
+        <div class="modal-footer">
+		<button class="btn btn-danger" type="submit">Je veux m'engager</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
 							
 
 
@@ -647,9 +690,6 @@ sont en train de changer !
 					<div class="row">
 						<div class="col-md-12">
 							<h3>{{ Auth::user()->name }}</h3>
-							<h4>change the world</h4>
-							<br/>
-							<br/>
 							<a class="text-white" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -659,6 +699,33 @@ sont en train de changer !
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
+							<h4>change the world</h4>
+							<br/>
+							<br/>
+							<div class="container">
+								<p><strong>Email:</strong></p>
+								<p>{{ Auth::user()->email }}</p>
+								<br>
+								<p><strong>Qualities:</strong></p>
+								<p>{{ Auth::user()->survey_two }}</p>
+								<br>
+								<p><strong>From:</strong></p>
+								<p>{{ Auth::user()->survey_three }}</p>
+								<br>
+								<p><strong>Where would you like to get involved?</strong></p>
+								<p>{{ Auth::user()->survey }}</p>
+								<br>
+								<a class="text-white" href="{{ url('/profile/{id}/') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('profile-form').submit();">
+                                            Profile
+                                        </a>
+								<form id="profile-form" action="{{ url('/profile/{id}/') }}" method="POST" style="display: none;">
+								
+                                        </form>
+							</div>
+
+
 							<br/>
 							<div class="clearfix"></div>
 							
