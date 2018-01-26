@@ -1,0 +1,14 @@
+.panel-heading{
+    display: none;
+}
+.navbar-default{
+    display: none;
+}
+body{
+    padding-top: 50px;
+
+    background-image:  url('../img/gi_register.jpg');
+    background-repeat: no-repeat;
+  
+   background-size: cover;
+}

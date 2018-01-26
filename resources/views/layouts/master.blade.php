@@ -762,7 +762,7 @@ sont en train de changer !
 								    title="Google Plus" title=""></a>
 							</li>
 						</ul>
-						<p class="copyright">Copyright &#169; 2017 <a target="_blank" href="https://www.facebook.com/towfiq.badi">Molen IT</a> - All rights reserved.</p>
+						<p class="copyright">Copyright &#169; 2018 <a target="_blank" href="https://www.facebook.com/towfiq.badi">Molen IT</a> - All rights reserved.</p>
 					</div>
 				</div>
 			</div>

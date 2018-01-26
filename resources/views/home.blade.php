@@ -690,39 +690,57 @@ sont en train de changer !
 					<div class="row">
 						<div class="col-md-12">
 							<h3>{{ Auth::user()->name }}</h3>
-							<a class="text-white" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Se déconnecter
-                                        </a>
+							
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
 							<h4>change the world</h4>
 							<br/>
+							<p>{{ Auth::user()->email }}</p>
 							<br/>
 							<div class="container">
-								<p><strong>Email:</strong></p>
-								<p>{{ Auth::user()->email }}</p>
-								<br>
-								<p><strong>Qualities:</strong></p>
-								<p>{{ Auth::user()->survey_two }}</p>
-								<br>
-								<p><strong>From:</strong></p>
-								<p>{{ Auth::user()->survey_three }}</p>
-								<br>
+								<div class="col-md-6">
+								
+								<p><strong>Gender:</strong></p>
+								<p>{{ Auth::user()->gender }}</p>
+								
+								<p><strong>Year:</strong></p>
+								<p>{{ Auth::user()->year }} year old</p>
+								
+								<p><strong>Gratuated:</strong></p>
+								<p>{{ Auth::user()->graduated }}</p>
+								
+								<p><strong>Living:</strong></p>
+								<p>{{ Auth::user()->live }}</p>
+								</div>
+								<div class="col-md-6">
+								
+								
+								<p><strong>Nationality:</strong></p>
+								<p>{{ Auth::user()->nationality }}</p>
+								
+								<p><strong>Language:</strong></p>
+								<p>{{ Auth::user()->langue }}</p>
+								
+								<p><strong>Available From:</strong></p>
+								<p>{{ Auth::user()->available }}</p>
+								
 								<p><strong>Where would you like to get involved?</strong></p>
-								<p>{{ Auth::user()->survey }}</p>
+								<p>{{ Auth::user()->volontaire }}</p>
+								</div>
+								
+								
 								<br>
-								<a class="text-white" href="{{ url('/profile/{id}/') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('profile-form').submit();">
-                                            Profile
-                                        </a>
+								
 								<form id="profile-form" action="{{ url('/profile/{id}/') }}" method="POST" style="display: none;">
 								
-                                        </form>
+										</form>
+										<a class="text-white" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Se déconnecter
+                                        </a>
 							</div>
 
 
@@ -790,7 +808,7 @@ sont en train de changer !
 								    title="Google Plus" title=""></a>
 							</li>
 						</ul>
-						<p class="copyright">Copyright &#169; 2017 <a href="#">Molen IT</a> - All rights reserved.</p>
+						<p class="copyright">Copyright &#169; 2018 <a href="#">Molen IT</a> - All rights reserved.</p>
 					</div>
 				</div>
 			</div>

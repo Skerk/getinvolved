@@ -12,10 +12,10 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Last Name</label>
+                            <label for="name" class="col-md-4 control-label">Your Name</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" max="12" required autofocus>
 
                                 @if ($errors->has('name'))
                                     <span class="help-block">
@@ -24,35 +24,27 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="name" class="col-md-4 control-label">First Name</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="firstname" required autofocus>
-
-                                @if ($errors->has('firstname'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('firstname') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+                        
 
 
                         <div class="form-group">
                             <label for="name" class="col-md-4 control-label">Gender</label>
 
                             <div class="col-md-6">
-                            <input type="radio" name="gender" value="female">Female
-                            <input type="radio" name="gender" value="male">Male
+                            <input type="radio" name="gender" value="Female" >Female
+                            <input  type="radio" name="gender" value="Male">Male
+                            <input checked type="radio" name="gender" value="Other" >Other
                             </div>
                         </div>
+
+
+
 
                         <div class="form-group">
                             <label for="name" class="col-md-4 control-label">Year</label>
 
                             <div class="col-md-6">
-                            <input id="year" type="text" class="form-control" name="year" required>
+                            <input id="year" type="number" class="form-control" name="year" required>
                             </div>
                         </div>
                         
@@ -60,7 +52,7 @@
                             <label for="name" class="col-md-4 control-label">I'm graduated</label>
 
                             <div class="col-md-6">
-                            <input id="survey" type="text" class="form-control" name="graduated" required>
+                            <input id="graduated" type="text" class="form-control" name="graduated" required>
                             </div>
                         </div>
                        
@@ -76,7 +68,7 @@
                             <label for="name" class="col-md-4 control-label">I from</label>
 
                             <div class="col-md-6">
-                            <input id="from" type="text" class="form-control" name="from" required>
+                            <input id="nationality" type="text" class="form-control" name="nationality" required>
                             </div>
                         </div>
 
@@ -125,7 +117,7 @@
                             <label for="name" class="col-md-4 control-label">I'm available from</label>
 
                             <div class="col-md-6">
-                            <input id="survey" type="text" class="form-control" name="survey" required>
+                            <input id="available" type="text" class="form-control" name="available" required>
                             </div>
                         </div>
 
@@ -134,7 +126,7 @@
                             <label class="col-md-4 control-label">I speak fluently</label>
 
                             <div class="col-md-6">
-                                <input id="survey2" type="text" class="form-control" name="survey_two" required>
+                                <input id="langue" type="text" class="form-control" name="langue" required>
                             </div>
                         </div>
                         
@@ -142,12 +134,12 @@
                             <label class="col-md-4 control-label">I'm looking for an internship/volunteering</label>
 
                             <div class="col-md-6">
-                                <input id="survey3" type="text" class="form-control" name="survey_three" required>
+                                <input id="survey3" type="text" class="form-control" name="volontaire" required>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
+                            <div class="col-md-12 text-center">
                                 <button type="submit" class="btn btn-primary">
                                     Register
                                 </button>

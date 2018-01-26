@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
+
 return view('layouts/master');
 
 });
@@ -44,7 +45,8 @@ Auth::routes();
 Route::middleware('auth')->group(function () {
     Route::get('/home', 'HomeController@index', function(){
         Route::get('/', 'HomeController@index'); 
-
+        
     }); 
+    
    
 });
