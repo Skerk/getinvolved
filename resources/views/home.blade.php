@@ -111,7 +111,7 @@
 				<h1><button class="navbar-brand round-logo pt-trigger css3Animate" data-animation="22" data-goto="1" data-style="lightNav">GI</button></h1>
 				<ul class="nav navbar-nav hidden-xs">
 					<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="2" data-style="darkNav" data-style2="aboutmeNav">Who we are<span class="line css3Animate"></span></button></li>
-					<li><button class="pt-trigger right-margin css3Animate" data-animation="22" data-goto="3" data-style="darkNav" data-style2="workNav">Problem<span class="line css3Animate"></span></button></li>
+					<li><button class="pt-trigger right-margin css3Animate" data-animation="22" data-goto="3" data-style="darkNav" data-style2="workNav">CHANGEMAKERS<span class="line css3Animate"></span></button></li>
 					<li><button class="pt-trigger left-margin css3Animate" data-animation="22" data-goto="5" data-style="darkNav" data-style2="blogNav">Missions<span class="line css3Animate"></span></button></li>
 					<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="6" data-style="lightNav" data-style2="contactNav">{{ Auth::user()->name }}<span class="line css3Animate"></span></button></li>
 				</ul>
@@ -122,9 +122,9 @@
 			<a href="#" id="menuMobileClose" class="css3Animate" aria-hidden="true" data-icon="&#x51;" title=""></a>
 			<ul class="nav navbar-nav">
 				<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="2" data-style="darkNav" data-style2="aboutmeNav">Who we are<span class="line css3Animate"></span></button></li>
-				<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="3" data-style="darkNav" data-style2="workNav">Problem<span class="line css3Animate"></span></button></li>
+				<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="3" data-style="darkNav" data-style2="workNav">CHANGEMAKERS<span class="line css3Animate"></span></button></li>
 				<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="5" data-style="darkNav" data-style2="blogNav">Missions<span class="line css3Animate"></span></button></li>
-				<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="6" data-style="lightNav" data-style2="contactNav">Sign In<span class="line css3Animate"></span></button></li>
+				<li><button class="pt-trigger css3Animate" data-animation="22" data-goto="6" data-style="lightNav" data-style2="contactNav">{{Auth::user()->name}}<span class="line css3Animate"></span></button></li>
 			</ul>
 		</div>
 
@@ -149,11 +149,15 @@
 								
 							</div>
 							<div>
-								<h2>IF YOU WANT TO BE<br/>A PART OF THE <span class="redspan">SOLUTION</span></h2>
+								<h2>YOU WANT TO BE<br/>A PART OF THE <span class="redspan">SOLUTION</span></h2>
 								
 							</div>
 							<div>
-								<h2>JOIN THE <span class="redspan">MOVEMENT</span><br/>GET INVOLVED </h2>
+								<h2>JOIN THE <span class="redspan">MOVEMENT</span></h2>
+								
+							</div>
+							<div>
+								<h2><span class="redspan">GET</span> INVOLVED </h2>
 								
 							</div>
 						</div>
@@ -177,7 +181,7 @@
 							<h2>Hello.<br/>We are <br/>Get Involved.</h2>
 							<h3>We want to give new opportunities to young folks, to take part of the changemakers movement, to change those broken
 								relationships between our nations and to inspire new initiatives solving social, environmental and economic issues.</h3>
-							<a class="css3Animate" href="#" title="Download resume">Explore</a>
+							<a class="pt-trigger css3Animate" data-animation="22" data-goto="5" data-style="darkNav" data-style2="blogNav"title="Download resume">Explore</a>
 							<hr>
 							<ul>
 								<!--<li>
@@ -472,7 +476,7 @@
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<h3>Missions</h3>
-							<h4>Follow Us</h4>
+							<h4>ELEPHANT I</h4>
 							<div class="clearfix"></div>
 							<!-- POST 1 -->
 							<div class="col-md-12 post">
@@ -518,10 +522,15 @@ visant à renforcer la population s’implémentent dans divers endroits du pays
 doivent encore faire face à de nombreux défis tels que: la sécurité, la réintégration des ex-
 combattants, la cohésion sociale, l’emploi des jeunes, la dynamisation du secteur privé… Les choses
 sont en train de changer !
+
 <div class="row text-center">
 
-	<button class="btn btn-danger" type="submit">Je veux m'engager</button>
-	<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Plus d'informations</button>
+	<a class="btn btn-danger" href="mailto:getinvolved.europe@gmail.com">Je m'engage</a>
+	
+
+
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Plus d'informations</button>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -529,7 +538,7 @@ sont en train de changer !
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4>Côte d'Ivoire</h4>
+          <h4 class="modal-title">Côte d'Ivoire</h4>
         </div>
         <div class="modal-body">
 		<ul class="ulmission">
@@ -541,13 +550,18 @@ sont en train de changer !
 </ul>
         </div>
         <div class="modal-footer">
-		<button class="btn btn-danger" type="submit">Je veux m'engager</button>
+		<a class="btn btn-danger" href="mailto:getinvolved.europe@gmail.com">Je m'engage</a>
           <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
         </div>
       </div>
     </div>
   </div>
-</div></div>
+
+ 
+
+
+</div>
+</div>
 							
 
 
@@ -700,7 +714,7 @@ sont en train de changer !
 							<p>{{ Auth::user()->email }}</p>
 							<br/>
 							<div class="container">
-								<div class="col-md-6">
+								<div class="col-md-6 col-lg-6 col-xs-12">
 								
 								<p><strong>Gender:</strong></p>
 								<p>{{ Auth::user()->gender }}</p>
@@ -714,7 +728,7 @@ sont en train de changer !
 								<p><strong>Living:</strong></p>
 								<p>{{ Auth::user()->live }}</p>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-6 col-lg-6 col-xs-12">
 								
 								
 								<p><strong>Nationality:</strong></p>
@@ -732,19 +746,24 @@ sont en train de changer !
 								
 								
 								<br>
-								
-								<form id="profile-form" action="{{ url('/profile/{id}/') }}" method="POST" style="display: none;">
-								
-										</form>
+							
 										<a class="text-white" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Se déconnecter
-                                        </a>
+                                            Log Out
+										</a>
+										<br/>
+</br>
+<div class="col-md-12 col-xs-12">
+<h5 style="margin-top: 50px;">Contact</h5>
+		<script id="cid0020000177956144749" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 180px;height: 242px;">{"handle":"getinvolvedbe","arch":"js","styles":{"a":"e7314f","b":100,"c":"000000","d":"000000","k":"e7314f","l":"e7314f","m":"e7314f","p":"10","q":"e7314f","r":100,"cv":1,"cvfnt":"Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif, sans-serif","cvfntw":"bold","cvbg":"e7314f","cvfg":"ffffcc","cvw":200,"cvh":30,"ticker":1}}</script>
+
+</div>
 							</div>
 
 
-							<br/>
+		
+
 							<div class="clearfix"></div>
 							
 							<div class="clearfix"></div>
@@ -754,12 +773,13 @@ sont en train de changer !
 					</div>
 				</div>
 			</section>
-
-			<div id="map"></div>
+			
+			<!-- <div id="map"></div>
 			<div id="cd-zoom-in" class="css3Animate"><span aria-hidden="true" data-icon="&#x4c;"></span></div>
-			<div id="cd-zoom-out" class="css3Animate"><span aria-hidden="true" data-icon="&#x4b;"></span></div>
+			<div id="cd-zoom-out" class="css3Animate"><span aria-hidden="true" data-icon="&#x4b;"></span></div> -->
 
 		</div>
+		
 		<!-- END CONTACT SECTION -->
 
 
@@ -776,7 +796,7 @@ sont en train de changer !
 					<div class="col-md-4 col-sm-4">
 						<p><span class="info" aria-hidden="true" data-icon="&#xe01d;"></span></p>
 						<!--<p>Calle Sandoval 31001-->
-						<br/>Brussels (Belgium)</p>
+						Brussels (Belgium)</p>
 					</div>
 					<div class="col-md-4 col-sm-4">
 						<p><span class="info" aria-hidden="true" data-icon="&#xe00b;"></span></p>
@@ -805,7 +825,7 @@ sont en train de changer !
 							<!--<li><a class="pinterest css3Animate" href="#" target="_blank" aria-hidden="true" data-icon="&#xe095;" data-toggle="tooltip" data-placement="top" title="Pinterest" title=""></a></li>-->
 							<li>
 								<a class="googleplus css3Animate" href="#" aria-hidden="true" data-icon="&#xe096;" data-toggle="tooltip" data-placement="top"
-								    title="Google Plus" title=""></a>
+								    title="Google" title=""></a>
 							</li>
 						</ul>
 						<p class="copyright">Copyright &#169; 2018 <a href="#">Molen IT</a> - All rights reserved.</p>
@@ -824,23 +844,23 @@ sont en train de changer !
 	<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=y-ZeBO0ro8Q',containment:'#video-content',autoPlay:true,loop:true, mute:true, startAt:0, opacity:1, quality:'high'}"><a/>
 
 		<!-- BOOTSTRAP CORE JAVASCRIPT
-	================================================== -->
+		================================================== -->
 		<!-- PLACED AT THE END OF THE DOCUMENT SO THE PAGES LOAD FASTER -->
+		
 		<script type="text/javascript" src="{{url('js/jquery-1.11.2.min.js') }}"></script>
 		<script type="text/javascript" src="{{url('js/jquery-ui.js') }}"></script>
 		<script type="text/javascript" src="{{ url('bootstrap/js/bootstrap.min.js') }}"></script>
 		<script type="text/javascript" src="{{ url('js/circle-progress.js') }}"></script>
 		<script type="text/javascript" src="{{ url('js/jquery.easypiechart.js') }}"></script>
 		<script type="text/javascript" src="{{ url('js/transition.js') }}"></script>
-		<script type="text/javascript" src="{{ url('js/map_script.js') }}"></script>
+		<!-- <script type="text/javascript" src="{{ url('js/map_script.js') }}"></script> -->
 		<script type="text/javascript" src="{{ url('js/isotope.pkgd.min.js') }}"></script>
 		<script type="text/javascript" src="{{ url('js/imagesloaded.js') }}"></script>
 		<script type="text/javascript" src="{{ url('js/jquery.magnific-popup.min.js') }}"></script>
-		<script type="text/javascript" src="{{ url('js/map.js') }}"></script>
+		<!-- <script type="text/javascript" src="{{ url('js/map.js') }}"></script> -->
 		<script type="text/javascript" src="{{ url('js/jquery.mb.YTPlayer.js') }}"></script>
 		<script type="text/javascript" src="{{ url('js/video_youtube.js') }}"></script>
 		<script type="text/javascript" src="{{ url('js/custom_2.js') }}"></script>
-        <script src='{{ ('../assets/js/bootstrap.js') }}'></script>
 
 		<!-- DEMO Switcher
   	================================================== -->

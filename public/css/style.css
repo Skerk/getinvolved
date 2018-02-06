@@ -1318,6 +1318,7 @@ margin-top: 20px;
 }
 #movement{
 	margin-top: 40px;
+	margin-bottom: 20px;
 	font-size: 26px;
 }
 .redspan{
@@ -1352,7 +1353,7 @@ margin-top: 20px;
     overflow: hidden;
 }
 .textstat{
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .blog .post .post-image iframe {
