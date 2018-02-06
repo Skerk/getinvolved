@@ -19,6 +19,19 @@
 /*------------------------------------------------------------------
 1. MON STYLE CSS
 -------------------------------------------------------------------*/
+
+
+	
+@media only screen and (min-width: 370px) and (max-width: 1000px){
+.blog .post	.post-right{
+width: 80%!important;
+}
+}
+
+
+
+
+
 .text-white{
 	color: white;
 }
