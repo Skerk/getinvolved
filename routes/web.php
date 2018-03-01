@@ -50,3 +50,13 @@ Route::middleware('auth')->group(function () {
     
    
 });
+
+// Route::get('/subscribe', function () {
+
+//     return view('/newsletter');
+    
+//     });
+
+    Route::get('manageMailChimp', 'MailChimpController@manageMailChimp');
+Route::post('subscribe',['as'=>'subscribe','uses'=>'MailChimpController@subscribe']);
+Route::post('sendCompaign',['as'=>'sendCompaign','uses'=>'MailChimpController@sendCompaign']);
